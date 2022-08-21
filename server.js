@@ -4,8 +4,6 @@ const app = express();
 app.use(cors());
 
 require("./db/mongoose");
-// const bcrypt = require("bcryptjs");
-// const userRouter = require("./router/user");
 const taskRouter = require("./router/task");
 const port = process.env.PORT || 4000;
 app.use(express.json());

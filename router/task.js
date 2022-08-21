@@ -1,6 +1,9 @@
 const express = require("express");
 const router = new express.Router();
 const Task = require("../models/Task");
+router.get("/", (req, res) => {
+  res.send("welcome to innovationm");
+});
 router.post("/task", async (req, res) => {
   const task = new Task(req.body);
   //   console.log("New", task);
