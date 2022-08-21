@@ -1,5 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
+app.use(cors());
+
 require("./db/mongoose");
 // const bcrypt = require("bcryptjs");
 // const userRouter = require("./router/user");
